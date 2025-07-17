@@ -1,8 +1,9 @@
 import turtle
-turtle.Screen().bgcolor("red")
-turtle.Screen().setup(300,400)
-polygon=turtle.Turtle()
-for i in range(6):
-    polygon.forward(70)
-    polygon.right(60)
+
+pen = turtle.Turtle()
+pen.speed('fastest')
+for _ in range(4):
+    pen.forward(100)
+    pen.right(90)
+
 turtle.done()
