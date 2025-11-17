@@ -1,0 +1,39 @@
+class BMW:
+    def __init__(self, model):
+        self.model = model
+
+    def start_engine(self):
+        print(f"The BMW {self.model} engine roars to life!")
+
+    def drive(self):
+        print(f"The BMW {self.model} is cruising smoothly on the highway.")
+
+    def stop(self):
+        print(f"The BMW {self.model} comes to a graceful stop.")
+
+
+class Ferrari:
+    def __init__(self, model):
+        self.model = model
+
+    def start_engine(self):
+        print(f"The Ferrari {self.model} engine screams with power!")
+
+    def drive(self):
+        print(f"The Ferrari {self.model} speeds down the track like a bullet.")
+
+    def stop(self):
+        print(f"The Ferrari {self.model} halts with precision braking.")
+
+def test_drive(car):
+    car.start_engine()
+    car.drive()
+    car.stop()
+    print("-" * 40)
+
+if __name__ == "__main__":
+    bmw_car = BMW("X5")
+    ferrari_car = Ferrari("488 Spider")
+
+    test_drive(bmw_car)
+    test_drive(ferrari_car)
